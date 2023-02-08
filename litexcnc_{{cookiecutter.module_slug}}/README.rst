@@ -1,6 +1,6 @@
 ====================={% for _ in cookiecutter.module_name %}={% endfor %}
 Welcome to LiteX-CNC {{ cookiecutter.module_name }}
-====================={% for _ in cookiecutter.project_name %}={% endfor %}
+====================={% for _ in cookiecutter.module_name %}={% endfor %}
 
 {{ cookiecutter.module_short_description }}
 
@@ -21,7 +21,7 @@ Litex-CNC {{ cookiecutter.module_name }} can be installed using pip:
 
 .. code-block:: shell
 
-    pip install {{ cookiecutter.project_slug }}
+    pip install litexcnc_{{ cookiecutter.module_slug }}
 
 
 After installation of the module, one can use the module in the firmware and driver.
