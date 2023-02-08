@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "litex-cnc-module-template"
+version = "0.0.0"
+description = "Cookiecutter template for extending Litex-CNC with new modules"
+authors = ["Peter van Tol <PeterTGvanTol@gmail.com>"]
+license = "GPL2.0"
+readme = "README.md"
+packages = [{include = "litex_cnc_module_template"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

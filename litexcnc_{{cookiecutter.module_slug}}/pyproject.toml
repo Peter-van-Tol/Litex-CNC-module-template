@@ -1,0 +1,50 @@
+[tool.poetry]
+name = "litexcnc_{{cookiecutter.module_slug}}"
+version = "{{ cookiecutter.version }}"
+description = "{{ cookiecutter.module_short_description }}"
+authors = ["{{ cookiecutter.full_name }} <{{ cookiecutter.email }}>"]
+license = "GPL2.0"
+readme = "README.rst"
+packages = [{include = "litexcnc", from = "src"}]
+homepage = "https://github.com/Peter-van-Tol/LiteX-CNC"
+repository = "https://github.com/Peter-van-Tol/LiteX-CNC"
+documentation = "https://litex-cnc.readthedocs.io/en/latest/"
+keywords = [
+    "FPGA",
+    "CNC",
+    "CNC-controller",
+    "CNC-machine",
+    "linuxcnc",
+    "linuxcnc-FPGA",
+    "litex",
+    "litecnc"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Environment :: Other Environment",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Natural Language :: English",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Other",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Software Development :: Code Generators",
+    "Topic :: System :: Hardware :: Hardware Drivers"
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pydantic = "^1.10.2"
+litexcnc = "^1.0.0"
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "^5.3.0"
+sphinx-rtd-theme = "^1.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

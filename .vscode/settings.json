@@ -1,0 +1,5 @@
+{
+    "files.associations": {
+        "litexcnc_{{cookiecutter.module_slug}}.h": "c"
+    }
+}
