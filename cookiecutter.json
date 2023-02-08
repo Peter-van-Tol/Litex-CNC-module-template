@@ -3,6 +3,7 @@
     "email": "peter.van.tol@example.com",
     "module_name": "Litex-CNC module",
     "module_slug": "{{ cookiecutter.module_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "version": "0.1.0",
     "module_short_description": "Module Boilerplate contains all the boilerplate you need to create a Litex-CNC module.",
     "fingerprint": "0x{{ uuid4()[-8:]}}",
     "_extensions": ["cookiecutter.extensions.UUIDExtension"]
