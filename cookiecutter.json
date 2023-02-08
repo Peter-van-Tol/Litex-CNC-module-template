@@ -4,6 +4,6 @@
     "module_name": "Litex-CNC module",
     "module_slug": "{{ cookiecutter.module_name.lower().replace(' ', '_').replace('-', '_') }}",
     "module_short_description": "Module Boilerplate contains all the boilerplate you need to create a Litex-CNC module.",
-    "fingerprint": "0x{{ uuid()[-8:]}}",
+    "fingerprint": "0x{{ uuid4()[-8:]}}",
     "_extensions": ["cookiecutter.extensions.UUIDExtension"]
 }
