@@ -227,6 +227,18 @@ size_t required_read_buffer(void *instance);
 
 
 /*******************************************************************************
+ * Configure the FPGA during the first cycle.
+ *
+ * @param instance The structure containing the data on the module instance
+ * @param data Pointer to the array where the data should be written to. NOTE:
+ *     the pointer should moved to the next element, so the next module can 
+ *     append its data. All data in LitexCNC is 4-bytes wide. 
+ * @param period Period in nano-seconds of a cycle
+ ******************************************************************************/
+int litexcnc_{{ cookiecutter.module_slug }}_config(void *module, uint8_t **data, int period);
+
+
+/*******************************************************************************
  * Prepares the data to be written out to the device
  *
  * @param instance The structure containing the data on the module instance

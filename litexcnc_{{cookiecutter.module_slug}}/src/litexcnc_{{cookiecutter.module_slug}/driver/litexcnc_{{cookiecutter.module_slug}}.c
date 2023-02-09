@@ -79,7 +79,7 @@ int rtapi_app_main(void) {
         "Loading Litex {{ cookiecutter.module_name }} module driver version %u.%u.%u\n", 
         LITEXCNC_{{ cookiecutter.module_slug.upper() }}_VERSION_MAJOR, 
         LITEXCNC_{{ cookiecutter.module_slug.upper() }}_VERSION_MINOR, 
-        LITEXCNC_{{ cookiecutter.module_slug.upper() }}_VERSION_PATCH, 
+        LITEXCNC_{{ cookiecutter.module_slug.upper() }}_VERSION_PATCH
     );
 
     // Initialize the module

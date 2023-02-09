@@ -30,6 +30,7 @@ This code was written as part of the LiteX-CNC project.
 Copyright (c) 2023 All rights reserved.
 """
 # Imports for creating a json-definition
+import os
 try:
     from typing import ClassVar, Iterable, List, Literal, Union
 except ImportError:
@@ -269,7 +270,10 @@ class {{cookiecutter.module_slug}}Instance(ModuleBaseModel):
     Model describing the {{cookiecutter.module_name}} module
     """
     module_type: Literal['{{cookiecutter.module_slug}}'] = '{{cookiecutter.module_slug}}'
-    module_id: ClassVar[int] = {{cookiecutter.fingerprint}}  # Must be equal to litexcnc_{{cookiecutter.module_slug}}.h
+    module_id: ClassVar[int] = {{cookiecutter.fingerprint}}  # Must be equal to litexcnc_{{cookiecutter.module_slug}}.hdriver_files: ClassVar[List[str]] = [
+        os.path.dirname(__file__) + '/../driver/litexcnc_{{cookiecutter.module_slug}.c',
+        os.path.dirname(__file__) + '/../driver/litexcnc_{{cookiecutter.module_slug}.h'
+    ]
     instances: List[{{cookiecutter.module_slug}}InstanceConfig] = Field(
         [],
         item_type={{cookiecutter.module_slug}}InstanceConfig,
