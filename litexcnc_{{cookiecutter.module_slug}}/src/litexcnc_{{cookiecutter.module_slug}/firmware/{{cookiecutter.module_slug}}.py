@@ -255,7 +255,7 @@ class {{cookiecutter.module_slug}}InstanceConfig(ModuleInstanceBaseModel):
         "These names are used to be able to generate the aliases for the pins when "
         "the end-user defines a name for this instance." 
     )
-    pins: ClassVar[List[str]] = Field(
+    params: ClassVar[List[str]] = Field(
         [
             ...
         ],
