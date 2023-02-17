@@ -271,8 +271,8 @@ class {{cookiecutter.module_slug}}Instance(ModuleBaseModel):
     """
     module_type: Literal['{{cookiecutter.module_slug}}'] = '{{cookiecutter.module_slug}}'
     module_id: ClassVar[int] = {{cookiecutter.fingerprint}}  # Must be equal to litexcnc_{{cookiecutter.module_slug}}.hdriver_files: ClassVar[List[str]] = [
-        os.path.dirname(__file__) + '/../driver/litexcnc_{{cookiecutter.module_slug}.c',
-        os.path.dirname(__file__) + '/../driver/litexcnc_{{cookiecutter.module_slug}.h'
+        os.path.dirname(__file__) + '/../driver/litexcnc_{{cookiecutter.module_slug}}.c',
+        os.path.dirname(__file__) + '/../driver/litexcnc_{{cookiecutter.module_slug}}.h'
     ]
     instances: List[{{cookiecutter.module_slug}}InstanceConfig] = Field(
         [],
